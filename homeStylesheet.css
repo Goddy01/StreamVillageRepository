@@ -1,0 +1,270 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #131313;
+  /* background-color: blue; */
+  font-family: "Roboto";
+  /* overflow: hidden; */
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container--companyName {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+#row1 {
+  width: 100vw;
+  /* margin-left: 1px; */
+  background-color: coral;
+}
+
+.carousel-caption h1 {
+  color: red;
+}
+
+.carousel-caption p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.carousel-item {
+  /* background-color: green; */
+  width: 100vw;
+}
+
+#row2 {
+  margin: 0;
+  padding: 0;
+  margin-top: -16px;
+  /* background-color: coral; */
+  width: 100vw;
+}
+
+#row2__col1 {
+  width: 100%;
+  padding: 0;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+#nestedContainer1 {
+  margin-bottom: 60px;
+}
+
+#nestedContainer1 .img-fluid {
+  display: inline;
+}
+
+#nestedContainer1 .thumbnail {
+  padding: 0;
+  margin: 12px;
+}
+
+#recentlyAdded {
+  color: #fff;
+  text-align: center;
+}
+
+#nestedContainer3 {
+  margin-top: -50px;
+  color: #fff;
+  /* padding: 20px 50px; */
+  /* font-size: 16px; */
+}
+
+@media (width < 640px) {
+  .container-fluid {
+    color: #333;
+    padding: 0px;
+  }
+
+  #nestedContainer1 {
+    margin: auto;
+    overflow-x: hidden;
+    margin-left: 3px;
+  }
+
+  #nestedContainer1 .caption {
+    color: #fff;
+  }
+
+  .container-fluid__list {
+    padding-top: 10px;
+  }
+
+  .container-fluid__list li {
+    list-style-type: none;
+    display: inline;
+  }
+
+  .container-fluid__list i {
+    display: inline-block;
+    margin-left: -30px;
+    margin-top: 7px;
+    float: left;
+    font-size: 25px;
+  }
+
+  .container-fluid__list .fa-search {
+    float: right;
+    margin-right: 20px;
+    font-size: 23px;
+    -webkit-text-stroke: 0.1px;
+  }
+
+  .carousel-caption {
+    bottom: 0;
+  }
+
+  #row2 img {
+    height: 40vh;
+  }
+
+  #nestedContainer1 .thumb {
+    /* background-color: red; */
+    height: 700px;
+    margin: auto;
+    padding: 0 100px 5px 5px;
+    width: 50%;
+    margin-bottom: -350px;
+    margin-top: 50px;
+  }
+
+  #nestedContainer1 .row {
+    width: 100vw;
+    margin: 0;
+    margin-left: -50px;
+    padding: 0;
+    /* background-color: green; */
+  }
+
+  .thumbnail .img-responsive {
+    height: 25vh;
+    width: 400px;
+  }
+
+  .thumbnail {
+    width: 40vw;
+    /* background-color: blue; */
+  }
+
+  .thumbnail .caption {
+    text-align: center;
+    font-weight: bolder;
+  }
+}
+
+@media (width >= 640px) {
+  .container-fluid {
+    width: 100vw;
+    /* overflow: hidden; */
+  }
+
+  #nestedContainer1 .caption {
+    font-size: large;
+    text-align: center;
+    color: #fff;
+    margin-right: 10px;
+    font-weight: bolder;
+  }
+
+  .container-fluid__list {
+    list-style-type: none;
+    font-size: 20px;
+    display: inline;
+  }
+
+  .container-fluid__list li {
+    display: inline;
+    padding: 10px 10px;
+  }
+
+  /* .container__list__input--width {
+        width: auto;
+        display: inline;
+    } */
+  .container-fluid__list input {
+    width: auto;
+    display: inline;
+    position: relative;
+    float: right;
+    right: 50px;
+    top: 10px;
+    /* height: 40px; */
+  }
+
+  #row1__col1 {
+    padding: 10px 0;
+    /* position: sticky; */
+    width: 100%;
+  }
+
+  .container-fluid__list i {
+    display: inline-block;
+    margin-left: -30px;
+    margin-top: 7px;
+    float: left;
+    font-size: 25px;
+  }
+
+  .container-fluid__list .fa-search {
+    float: right;
+    font-size: 23px;
+    -webkit-text-stroke: 0.1px;
+    margin-right: 20px;
+  }
+
+  .carousel-caption {
+    bottom: 0px;
+  }
+
+  #row2 img {
+    height: 100vh;
+    /* width: 100%; */
+  }
+
+  .thumbnail .img-responsive {
+    height: 38vh;
+    width: 80vw;
+  }
+}
+
+@media (min-width: 752px) and (max-width: 1100px) {
+  #nestedContainer1 .thumbnail {
+    height: 19vh;
+    width: 20vw;
+  }
+
+  #nestedContainer1 .img-responsive {
+    height: 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  #nestedContainer1 .thumb {
+    margin-top: -50px;
+    margin-bottom: -400px;
+  }
+
+  #nestedContainer3 {
+    margin-top: 50px;
+    width: fit-content;
+  }
+}
